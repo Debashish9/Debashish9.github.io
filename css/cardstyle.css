@@ -1,4 +1,26 @@
-
+#automatic-typing{
+  color: rgb(240, 193, 216);
+  text-align: center;
+  -webkit-animation: automatic-typing .4s ease-in-out infinite alternate;
+  -moz-animation: automatic-typing .4s ease-in-out infinite alternate;
+  animation: automatic-typing .4s ease-in-out infinite alternate;
+}
+@keyframes automatic-typing{
+  from{
+    text-shadow: 0 0 10px #fff,0 0 20px #0D8DAA, 0 0 30px #0F556F, 0 0 40px #450F65, 0 0 50px #680081, 0 0 60px #8F00AC, 0 0 70px #CA00EB;
+  }
+  to{
+    text-shadow: 0 0 20px #fff,0 0 30px #0D8DAA, 0 0 40px #0F556F, 0 0 50px #450F65, 0 0 60px #680081, 0 0 70px #8F00AC, 0 0 80px #CA00EB ;
+  }
+}
+@-webkit-keyframes automatic-typing{
+  from{
+    text-shadow: 0 0 10px #fff,0 0 20px #0D8DAA, 0 0 30px #0F556F, 0 0 40px #450F65, 0 0 50px #680081, 0 0 60px #8F00AC, 0 0 70px #CA00EB ;
+  }
+  to{
+    text-shadow: 0 0 20px #fff,0 0 30px #0D8DAA, 0 0 40px #0F556F, 0 0 50px #450F65, 0 0 60px #680081, 0 0 70px #8F00AC, 0 0 80px #CA00EB ;
+  }
+}
 /*------------- wish card---------------------------*/
 .imgcardwish{
   width:280px;
@@ -27,7 +49,7 @@
 }
 /*------------- wish card heading---------------------------*/
 .bdaywishheadingoutsidewishcard{
-  color:rgb(189, 57, 134);
+  color:rgb(82, 20, 56);
   text-align: center;
   margin-bottom: -80px!important;
 }
@@ -44,7 +66,7 @@
 
 .galleryheadingoutside{
   margin-top: -100px!important;
-  color:rgb(189, 57, 134);
+  color:rgb(68, 8, 58);
   text-align: center;
 }
 

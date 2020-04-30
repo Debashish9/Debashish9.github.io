@@ -192,7 +192,7 @@ ul.submenu li a.active {
 /* //menu */
 /*-- banner-- */
 .banner-left-side {
-    background: url(../images/a\ \(1\).jpg);
+    background: url(../images/bigbanner.png);
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: cover;
@@ -209,8 +209,19 @@ ul.submenu li a.active {
 }
 #right-banner,#about{
     background:#d6249f;
-    background: radial-gradient(circle at 30% 107%,#fdf497 0%, #fdf497 5%, #fd5949 25%, #d6249f 35%,#570f40 65%, #1d1d1d 95%);
+    background: radial-gradient(circle at 30% 107%,#fdf497 0%, #f1e87c 15%,#fd5949 20%, #fd3d2c 25%, #d6249f 35%,#a83185 50%,#570f40 65%, #1d1d1d 95%);
 }
+#container{
+    animation: colorchange 5s infinite;
+    -webkit-animation: colorchange .4s ease-in-out infinite alternate;
+    position: relative;
+    top:0px;
+    margin-top: -100px;
+    padding: 40px;
+    color:#ffffff;
+    height:100px;
+}
+
 .banner-right-side {
     background: url(../images/lightbg1.gif);
     margin-left: 532px;
@@ -273,7 +284,7 @@ ul.submenu li a.active {
 .number-w3three-info h5 {
     font-size: 27px;
     font-weight: 400;
-    color:#c3008b;
+    color:#000000;
 }
 .number-w3three-info h6,.footer-top p span,ul.address-text li b{
     font-size: 18px;
@@ -467,6 +478,10 @@ h6.top-title {
 .address_mail_footer_grids iframe {
     height: 19em;
 }
+.headlogoimg{
+    width: 400px;
+    height: 250px;
+}
 }
 @media(max-width:1366px){
 .banner-right-txt h4 {
@@ -499,6 +514,10 @@ h3.title {
 }
 .contact-forms textarea {
    height: 11em;
+}
+.headlogoimg{
+    width: 400px;
+    height: 250px;
 }
 }
 @media(max-width:1280px){
@@ -538,6 +557,10 @@ h6.top-title {
 .contact-forms textarea {
     height: 9em;
 }
+.headlogoimg{
+    width: 400px;
+    height: 250px;
+}
 }
 @media(max-width:1080px){	
 .banner-left-side {
@@ -568,6 +591,10 @@ left: 20%;
 .social-icons ul li a span {
     font-size: 18px;
 }	
+.headlogoimg{
+    width: 400px;
+    height: 250px;
+}
 }
 @media(max-width:1050px){
 h6.top-title {
@@ -587,6 +614,10 @@ h6.top-title {
 }
 .sub-position {
     left: 19%;
+}
+.headlogoimg{
+    width: 400px;
+    height: 250px;
 }
 }
 @media(max-width:1024px){
@@ -614,6 +645,10 @@ h3.title {
 .get-update-wthree {
     padding: 2.5em 2em;
 }	
+.headlogoimg{
+    width: 400px;
+    height: 250px;
+}
 }
 @media(max-width:991px){
 .banner-left-side {
@@ -650,6 +685,10 @@ h6.top-title {
 .address_mail_footer_grids iframe {
     height: 17em;
 }
+.headlogoimg{
+    width: 400px;
+    height: 250px;
+}
 }
 @media(max-width:900px){
 
@@ -665,6 +704,10 @@ h6.top-title {
 .number-w3three-info h6, .footer-top p span, ul.address-text li b {
     font-size: 16px;
 }	
+.headlogoimg{
+    width: 400px;
+    height: 250px;
+}
 }
 @media(max-width:800px){
 .banner-left-side {
@@ -690,6 +733,10 @@ h3.title {
 .about-history h2, .get-update-wthree h5 {
     font-size: 25px;
 }
+.headlogoimg{
+    width: 400px;
+    height: 250px;
+}
 }
 @media(max-width:768px){
 .banner-right-txt h4 {
@@ -706,6 +753,10 @@ h3.title {
 }
 .contact-forms textarea {
     height: 8em;
+}
+.headlogoimg{
+    width: 400px;
+    height: 250px;
 }
 }
 @media(max-width:767px){
@@ -727,6 +778,10 @@ h6.top-title {
 .social-icons ul li {
    padding-top: 50px;
 }
+.headlogoimg{
+    width: 400px;
+    height: 250px;
+}
 }
 @media(max-width:736px){
 .contact-forms input, .contact-forms textarea {
@@ -737,6 +792,10 @@ h6.top-title {
 }	
 h3.title {
     font-size: 28px;
+}
+.headlogoimg{
+    width: 400px;
+    height: 250px;
 }
 }
 @media(max-width:667px){
@@ -749,6 +808,10 @@ h3.title {
 .get-update-wthree {
     padding: 1.5em 1.7em;
 }	
+.headlogoimg{
+    width: 400px;
+    height: 250px;
+}
 }
 @media(max-width:640px){
 .banner-right-txt h4 {
@@ -759,6 +822,10 @@ h6.top-title {
 }
 .sub-position {
     top: 21px;
+}
+.headlogoimg{
+    width: 400px;
+    height: 250px;
 }
 }
 @media(max-width:600px){
@@ -773,6 +840,10 @@ h6.top-title {
 }	
 .sub-position {
     left: 23%;
+}
+.headlogoimg{
+    width: 400px;
+    height: 250px;
 }
 }
 @media(max-width:568px){
@@ -798,6 +869,10 @@ h6.top-title {
 .logo h1 a {
     padding: 15px 14px;
 }
+.headlogoimg{
+    width: 400px;
+    height: 250px;
+}
 }
 @media(max-width:480px){
 .gallery-img-grid {
@@ -815,6 +890,10 @@ h6.top-title {
 .footer-top h4, .blog-two-two h4 a, .my-grid-awards h4 {
     font-size: 20px;
 }
+.headlogoimg{
+    width: 160px;
+    height: 250px;
+}
 }
 @media(max-width:440px){
 .bottem-txt-footer p {
@@ -829,6 +908,10 @@ h6.top-title {
 .number-w3three-info h5 {
     font-size: 20px;
 }
+.headlogoimg{
+    width: 160px;
+    height: 250px;
+}
 }
 @media(max-width:414px){
 h3.title {
@@ -842,6 +925,10 @@ h6.top-title {
 }
 .address_mail_footer_grids iframe {
     height: 14em;
+}
+.headlogoimg{
+    width: 160px;
+    height: 250px;
 }
 }
 @media(max-width:384px){
@@ -868,6 +955,10 @@ ul#menu label span {
 .social-icons ul li a span {
     font-size: 15px;
 }
+.headlogoimg{
+    width: 160px;
+    height: 250px;
+}
 }
 @media(max-width:375px){
 .banner-right-txt h5 {
@@ -888,6 +979,10 @@ h3.title {
 .about-wthree-images {
     width: 80%;
 }	
+.headlogoimg{
+    width: 160px;
+    height: 250px;
+}
 }
 @media(max-width:320px){
 .about-wthree-images {
@@ -906,6 +1001,10 @@ h3.title {
 }
 .title-wls-text p {
     padding: 1.2em 0em 0em;
+}
+.headlogoimg{
+    width: 160px;
+    height: 250px;
 }
 }
 /*--//responsive--*/

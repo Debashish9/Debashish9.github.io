@@ -1,4 +1,4 @@
-var text = "Hi Sweta!<br>Wishing you Happy birthday.<br>!";
+var text = "Hi Kriti<br>Wishing you Happy Birthday<br>";
 var punctSlowDownArr = ["!", ".", "?"];
 var newLine = "<br>";
 
