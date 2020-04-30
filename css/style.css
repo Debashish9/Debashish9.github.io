@@ -207,11 +207,16 @@ ul.submenu li a.active {
     left: 0;
     overflow-x: hidden;
 }
+#right-banner,#about{
+    background:#d6249f;
+    background: radial-gradient(circle at 30% 107%,#fdf497 0%, #fdf497 5%, #fd5949 25%, #d6249f 35%,#570f40 65%, #1d1d1d 95%);
+}
 .banner-right-side {
+    background: url(../images/lightbg1.gif);
     margin-left: 532px;
 }
 .two-demo-button p {
-    color: #000;
+    
     font-weight: 700;
     font-size: 22px;
 }
@@ -220,7 +225,7 @@ ul.submenu li a.active {
 }
 .banner-right-txt h5 {
     font-size: 22px;
-    color: #000;
+    
 }
 .banner-right-txt h4 {
     color: #c3008b;

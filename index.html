@@ -25,6 +25,7 @@
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <!-- //font-awesome icons -->
   <!--stylesheets-->
+ 
   <link rel="stylesheet" href="css/cardstyle.css">
   <link rel="stylesheet" href="css/pstyle.css">
   <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
@@ -38,7 +39,7 @@
     <div class=" banner-left-side">
       <!-----------------------------------left side image-->
     </div>
-    <div class="banner-right-side"><!----main right section-->
+    <div class="banner-right-side" id="right-banner"><!----main right section-->
       <!-- banner -->
     <div class="banner-right-txt text-center" style="background-color:black;">
         <div id="container" style="color: antiquewhite;">
@@ -52,6 +53,7 @@
       <!-- about ------------------------------------**********------------------------------------->
       <section class="about py-lg-4 py-md-3 py-sm-3 py-3" id="about">
         <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+          <!------8888888888888888888888888888888888888888888888888888888888888888888888-->
           <div class="position-title position-relative">
             <h6 class="text-center top-title mb-2" id="message">All yours dear</h6>
             <div class="title-wls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
@@ -60,63 +62,379 @@
               </p>
             </div>
           </div>
-          <div class="row" id="1st_row"><!---------------1st Row-->
-             <div class="card ">
-                  <div class="imgBox">
-                        <img src="images/a (1).jpg" class="img"> 
-                        <p> &nbsp; hi sweta</p> 
-                  </div>
-                  <div class="detail"> 
-                        <h3 class='sn-cont'>Pink Sunset at Venice Beach</h3> 
-                          <p class='w3-opacity'>Beach</p>  
-                          <p class='w3-opacity'>Los Angeles, California</p>  
-                          <p class='sn-cont'>Venice City Beach is the main beach in the Venice District of Los Angeles. It stretches from the Venice Pier up to the north end of the 
-                  </div>
-              </div>
-              <div class="card ">
-                <div class="imgBox">
-                      <img src="images/a (2).jpg" class="img"> 
-                      <p> &nbsp; hi sweta</p> 
-                </div>
-                <div class="detail"> 
-                      <h3 class='sn-cont'>Pink Sunset at Venice Beach</h3> 
-                        <p class='w3-opacity'>Beach</p>  
-                        <p class='w3-opacity'>Los Angeles, California</p>  
-                        <p class='sn-cont'>Venice City Beach is the main beach in the Venice District of Los Angeles. It stretches from the Venice Pier up to the north end of the 
-                </div>
+          <br><br>
+          <div class="row" id="1strow"><!---------------1st Row-->
+           
+            <div class="hive" style="--n-rows: 3; --n-cols: 6">
+              <script>
+                function myFunctionaa()
+                {
+                  var x1=document.getElementById('onea');
+                  var x2=document.getElementById('twoa');
+                
+                  var x4=document.getElementById('foura');
+                
+                  var x6=document.getElementById('sixa');
+                  var x7=document.getElementById('sevena');
+                  if(x1.style.visibility==='hidden')
+                  {
+                    x1.style.visibility='visible';
+                    x2.style.visibility='visible';
+                  
+                    //x4.style.display='visible';
+              
+                    x6.style.visibility='visible';
+                    x7.style.visibility='visible';
+                  }
+                  else
+                  {
+                    x1.style.visibility='hidden';
+                    x1.style.transform='scale(1.0)';
+                    x1.style.transition='1.5s ease-in'; 
+                    x2.style.visibility='hidden';
+                    x2.style.transform='scale(1.0)';
+                    x2.style.transition='1.5s ease-in'; 
+                   // x4.style.display='none';
+               
+                    x6.style.visibility='hidden';
+                    x6.style.transform='scale(1.0)';
+                    x6.style.transition='1.5s ease-in'; 
+                    x7.style.visibility='hidden';
+                    x7.style.transform='scale(1.0)';
+                    x7.style.transition='1.5s ease-in';  
+                  }
+              
+                }
+                function myFunctiona()
+                  {
+                  var x1=document.getElementById('onea');
+                  var x2=document.getElementById('twoa');
+                
+                  var x4=document.getElementById('foura');
+                
+                  var x6=document.getElementById('sixa');
+                  var x7=document.getElementById('sevena');
+                  if(x1.style.visibility==='visible')
+                  {
+                    x1.style.visibility='hidden';
+
+                    x2.style.visibility='hidden';
+                    
+                   // x4.style.display='none';
+               
+                    x6.style.visibility='hidden';
+                    x7.style.visibility='hidden';
+                  }
+                  else
+                  {
+                    x1.style.visibility='visible';
+                    x1.style.transform='scale(1.1)';
+                    x1.style.transition='1.5s ease-out';
+                    x2.style.visibility='visible';
+                    x2.style.transform='scale(1.1)';
+                    x2.style.transition='1.5s ease-out';
+                    
+                    //x4.style.display='none';
+               
+                    x6.style.visibility='visible';
+                    x6.style.transform='scale(1.1)';
+                    x6.style.transition='1.5s ease-out';
+                    x7.style.visibility='visible';
+                    x7.style.transform='scale(1.1)';
+                    x7.style.transition='1.5s ease-out';
+                  }
+                }
+              </script>
+              <style>.hex-cell:nth-of-type(5n + 1) { grid-column-start: 2 }</style>
+              <div class="hex-cell"><img src="images/bd1.png"  class="imghive" id="onea" ></div>
+              <div class="hex-cell"><img src="images/bd2.png"  class="imghive" id="twoa" ></div>
+              <div class="hex-cell"><img src="images/a (3).jpg" class="imghive"id="three" style="display: none;"></div>
+              <div class="hex-cell"><img src="images/bdm.png" class="imghive"id="foura" onmouseenter="myFunctiona()" onmouseout="myFunctionaa()"></div>
+              <div class="hex-cell"><img src="images/a (3).jpg"class="imghive"id="five" style="display: none;"></div>
+              <div class="hex-cell"><img src="images/bd3.png"class="imghive"id="sixa"></div>
+              <div class="hex-cell"><img src="images/bd4.png"class="imghive"id="sevena"></div>
             </div>
-          </div>
-          <div class="row" id="2nd row"><!---------------2nd Row-->
-             <div class="card ">
-                  <div class="imgBox">
-                        <img src="images/a (3).jpg" class="img"> 
-                        <p> &nbsp; hi sweta</p> 
-                  </div>
-                  <div class="detail"> 
-                        <h3 class='sn-cont'>Pink Sunset at Venice Beach</h3> 
-                          <p class='w3-opacity'>Beach</p>  
-                          <p class='w3-opacity'>Los Angeles, California</p>  
-                          <p class='sn-cont'>Venice City Beach is the main beach in the Venice District of Los Angeles. It stretches from the Venice Pier up to the north end of the 
-                  </div>
-              </div>
-              <div class="card ">
-                <div class="imgBox">
-                      <img src="images/a (4).jpg" class="img"> 
-                      <p> &nbsp; hi sweta</p> 
-                </div>
-                <div class="detail"> 
-                      <h3 class='sn-cont'>Pink Sunset at Venice Beach</h3> 
-                        <p class='w3-opacity'>Beach</p>  
-                        <p class='w3-opacity'>Los Angeles, California</p>  
-                        <p class='sn-cont'>Venice City Beach is the main beach in the Venice District of Los Angeles. It stretches from the Venice Pier up to the north end of the 
-                </div>
+            <div class="hive" style="--n-rows: 3; --n-cols: 6">
+              <script>
+                 function myFunctionbb()
+                {
+                  var x1=document.getElementById('oneb');
+                  var x2=document.getElementById('twob');
+                
+                  var x4=document.getElementById('fourb');
+                
+                  var x6=document.getElementById('sixb');
+                  var x7=document.getElementById('sevenb');
+                  if(x1.style.visibility==='hidden')
+                  {
+                    x1.style.visibility='visible';
+                    x2.style.visibility='visible';
+                  
+                    //x4.style.display='visible';
+              
+                    x6.style.visibility='visible';
+                    x7.style.visibility='visible';
+                  }
+                  else
+                  {
+                    x1.style.visibility='hidden';
+                    x1.style.transform='scale(1.0)';
+                    x1.style.transition='1.5s ease-in'; 
+                    x2.style.visibility='hidden';
+                    x2.style.transform='scale(1.0)';
+                    x2.style.transition='1.5s ease-in'; 
+                   // x4.style.display='none';
+               
+                    x6.style.visibility='hidden';
+                    x6.style.transform='scale(1.0)';
+                    x6.style.transition='1.5s ease-in'; 
+                    x7.style.visibility='hidden';
+                    x7.style.transform='scale(1.0)';
+                    x7.style.transition='1.5s ease-in';
+                  }
+              
+                }
+                function myFunctionb()
+                  {
+                  var x1=document.getElementById('oneb');
+                  var x2=document.getElementById('twob');
+                
+                  var x4=document.getElementById('fourb');
+                
+                  var x6=document.getElementById('sixb');
+                  var x7=document.getElementById('sevenb');
+                  if(x1.style.visibility==='visible')
+                  {
+                    x1.style.visibility='hidden';
+
+                    x2.style.visibility='hidden';
+                    
+                   // x4.style.display='none';
+               
+                    x6.style.visibility='hidden';
+                    x7.style.visibility='hidden';
+                  }
+                  else
+                  {
+                    x1.style.visibility='visible';
+                    x1.style.transform='scale(1.1)';
+                    x1.style.transition='1.5s ease-out';
+                    x2.style.visibility='visible';
+                    x2.style.transform='scale(1.1)';
+                    x2.style.transition='1.5s ease-out';
+                    
+                    //x4.style.display='none';
+               
+                    x6.style.visibility='visible';
+                    x6.style.transform='scale(1.1)';
+                    x6.style.transition='1.5s ease-out';
+                    x7.style.visibility='visible';
+                    x7.style.transform='scale(1.1)';
+                    x7.style.transition='1.5s ease-out';
+                  }
+                }
+              </script>
+              <style>.hex-cell:nth-of-type(5n + 1) { grid-column-start: 2 }</style>
+              <div class="hex-cell"><img src="images/f1.png"  class="imghive" id="oneb" ></div>
+              <div class="hex-cell"><img src="images/f2.png"  class="imghive" id="twob" ></div>
+              <div class="hex-cell"><img src="images/a (3).jpg" class="imghive"id="three" style="display: none;"></div>
+              <div class="hex-cell"><img src="images/fm.png" class="imghive"id="fourb" onmouseenter="myFunctionb()" onmouseout="myFunctionbb()"></div>
+              <div class="hex-cell"><img src="images/a (3).jpg"class="imghive"id="five" style="display: none;"></div>
+              <div class="hex-cell"><img src="images/f3.png"class="imghive"id="sixb"></div>
+              <div class="hex-cell"><img src="images/f4.png"class="imghive"id="sevenb"></div>
             </div>
           </div>
           
           <!------8888888888888888888888888888888888888888888888888888888888888888888888-->
+          <div class="row" id="2ndrow" style="margin-bottom:-50px ;"><!---------------2nd Row-->
+            <div class="hive" style="--n-rows: 3; --n-cols: 6">
+              <script>
+                function myFunctioncc()
+                {
+                  var x1=document.getElementById('onec');
+                  var x2=document.getElementById('twoc');
+                
+                  var x4=document.getElementById('fourc');
+                
+                  var x6=document.getElementById('sixc');
+                  var x7=document.getElementById('sevenc');
+                  if(x1.style.visibility==='hidden')
+                  {
+                    x1.style.visibility='visible';
+                    x2.style.visibility='visible';
+                  
+                    //x4.style.display='visible';
+              
+                    x6.style.visibility='visible';
+                    x7.style.visibility='visible';
+                  }
+                  else
+                  {
+                    x1.style.visibility='hidden';
+                    x1.style.transform='scale(1.0)';
+                    x1.style.transition='1.5s ease-in'; 
+                    x2.style.visibility='hidden';
+                    x2.style.transform='scale(1.0)';
+                    x2.style.transition='1.5s ease-in'; 
+                   // x4.style.display='none';
+               
+                    x6.style.visibility='hidden';
+                    x6.style.transform='scale(1.0)';
+                    x6.style.transition='1.5s ease-in'; 
+                    x7.style.visibility='hidden';
+                    x7.style.transform='scale(1.0)';
+                    x7.style.transition='1.5s ease-in';
+                  }
+              
+                }
+                function myFunctionc()
+                  {
+                  var x1=document.getElementById('onec');
+                  var x2=document.getElementById('twoc');
+                
+                  var x4=document.getElementById('fourc');
+                
+                  var x6=document.getElementById('sixc');
+                  var x7=document.getElementById('sevenc');
+                  if(x1.style.visibility==='visible')
+                  {
+                    x1.style.visibility='hidden';
+
+                    x2.style.visibility='hidden';
+                    
+                   // x4.style.display='none';
+               
+                    x6.style.visibility='hidden';
+                    x7.style.visibility='hidden';
+                  }
+                  else
+                  {
+                    x1.style.visibility='visible';
+                    x1.style.transform='scale(1.1)';
+                    x1.style.transition='1.5s ease-out';
+                    x2.style.visibility='visible';
+                    x2.style.transform='scale(1.1)';
+                    x2.style.transition='1.5s ease-out';
+                    
+                    //x4.style.display='none';
+               
+                    x6.style.visibility='visible';
+                    x6.style.transform='scale(1.1)';
+                    x6.style.transition='1.5s ease-out';
+                    x7.style.visibility='visible';
+                    x7.style.transform='scale(1.1)';
+                    x7.style.transition='1.5s ease-out';
+                  }
+                }
+              </script>
+              <style>.hex-cell:nth-of-type(5n + 1) { grid-column-start: 2 }</style>
+              <div class="hex-cell"><img src="images/wm1.jpg"  class="imghive" id="onec" ></div>
+              <div class="hex-cell"><img src="images/wm2.jpg"  class="imghive" id="twoc" ></div>
+              <div class="hex-cell"><img src="images/a (3).jpg" class="imghive"id="three" style="display: none;"></div>
+              <div class="hex-cell"><img src="images/wmm.png" class="imghive"id="fourc" onmouseenter="myFunctionc()" onmouseout="myFunctioncc()" ></div>
+              <div class="hex-cell"><img src="images/a (3).jpg"class="imghive"id="five" style="display: none;"></div>
+              <div class="hex-cell"><img src="images/wm3.jpg"class="imghive"id="sixc"></div>
+              <div class="hex-cell"><img src="images/wm4.jpg"class="imghive"id="sevenc"></div>
+            </div>
+            <div class="hive" style="--n-rows: 3; --n-cols: 6">
+              <script>
+                function myFunctiondd()
+                {
+                  var x1=document.getElementById('oned');
+                  var x2=document.getElementById('twod');
+                
+                  var x4=document.getElementById('fourd');
+                
+                  var x6=document.getElementById('sixd');
+                  var x7=document.getElementById('sevend');
+                  if(x1.style.visibility==='hidden')
+                  {
+                    x1.style.visibility='visible';
+                    x2.style.visibility='visible';
+                  
+                    //x4.style.display='visible';
+              
+                    x6.style.visibility='visible';
+                    x7.style.visibility='visible';
+                  }
+                  else
+                  {
+                    x1.style.visibility='hidden';
+                    x1.style.transform='scale(1.0)';
+                    x1.style.transition='1.5s ease-in'; 
+                    x2.style.visibility='hidden';
+                    x2.style.transform='scale(1.0)';
+                    x2.style.transition='1.5s ease-in'; 
+                   // x4.style.display='none';
+               
+                    x6.style.visibility='hidden';
+                    x6.style.transform='scale(1.0)';
+                    x6.style.transition='1.5s ease-in'; 
+                    x7.style.visibility='hidden';
+                    x7.style.transform='scale(1.0)';
+                    x7.style.transition='1.5s ease-in';
+                  }
+              
+                }
+                function myFunctiond()
+                  {
+                  var x1=document.getElementById('oned');
+                  var x2=document.getElementById('twod');
+                
+                  var x4=document.getElementById('fourd');
+                
+                  var x6=document.getElementById('sixd');
+                  var x7=document.getElementById('sevend');
+                  if(x1.style.visibility==='visible')
+                  {
+                    x1.style.visibility='hidden';
+
+                    x2.style.visibility='hidden';
+                    
+                   // x4.style.display='none';
+               
+                    x6.style.visibility='hidden';
+                    x7.style.visibility='hidden';
+                  }
+                  else
+                  {
+                    x1.style.visibility='visible';
+                    x1.style.transform='scale(1.1)';
+                    x1.style.transition='1.5s ease-out';
+                    x2.style.visibility='visible';
+                    x2.style.transform='scale(1.1)';
+                    x2.style.transition='1.5s ease-out';
+                    
+                    //x4.style.display='none';
+               
+                    x6.style.visibility='visible';
+                    x6.style.transform='scale(1.1)';
+                    x6.style.transition='1.5s ease-out';
+                    x7.style.visibility='visible';
+                    x7.style.transform='scale(1.1)';
+                    x7.style.transition='1.5s ease-out';
+                  }
+                }
+              </script>
+              <style>.hex-cell:nth-of-type(5n + 1) { grid-column-start: 2 }</style>
+              <div class="hex-cell"><img src="images/ps1.jpg"  class="imghive" id="oned" ></div>
+              <div class="hex-cell"><img src="images/ps2.jpg"  class="imghive" id="twod" ></div>
+              <div class="hex-cell"><img src="images/a (3).jpg" class="imghive"id="three" style="display: none;"></div>
+              <div class="hex-cell"><img src="images/psm.png" class="imghive"id="fourd" onmouseenter="myFunctiond()" onmouseout="myFunctiondd()"></div>
+              <div class="hex-cell"><img src="images/a (3).jpg"class="imghive"id="five" style="display: none;"></div>
+              <div class="hex-cell"><img src="images/ps3.jpg"class="imghive"id="sixd"></div>
+              <div class="hex-cell"><img src="images/ps4.jpg"class="imghive"id="sevend"></div>
+            </div>
+          </div>
+          
+          </div>
+      
+          <!------8888888888888888888888888888888888888888888888888888888888888888888888-->
           <div class="about-history my-lg-5 my-md-4 my-3">
-            <h2 class="pb-lg-4 pb-3">Some Facts About You</h2>
-            <p>sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, eiusmod tempor incididunt
+            
+            <h2 class="pb-lg-4 pb-3" style="text-align: center;">Some Facts About You</h2>
+            <br><br>
+            <p style="text-align: center;">sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, eiusmod tempor incididunt
               ut labore et consectetur adipiscing sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem ipsum
               dolor sit amet, eiusmod tempor incididunt ut labore et consectetur adipiscing</p>
           </div>
@@ -124,31 +442,114 @@
 
             <div class="col-lg-3 col-md-3 col-sm-3 col-6 count-num-txt">
               <div class="number-w3three-info">
-                <h5>10</h5>
-                <h6 class="pt-2">Experience</h6>
+                <h5>4</h5>
+                <h6 class="pt-2">Birthdays Witness</h6>
               </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 col-6 count-num-txt">
               <div class="number-w3three-info">
-                <h5>250+</h5>
-                <h6 class="pt-2">Projects</h6>
+                <h5>4</h5>
+                <h6 class="pt-2">Family Of People</h6>
               </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 col-6 count-num-txt">
               <div class="number-w3three-info">
-                <h5>150</h5>
-                <h6 class="pt-2">Awards</h6>
+                <h5>4</h5>
+                <h6 class="pt-2">Moments Withme</h6>
               </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 col-6 count-num-txt">
               <div class="number-w3three-info">
-                <h5>125</h5>
-                <h6 class="pt-2">Tea</h6>
+                <h5>4</h5>
+                <h6 class="pt-2">World Of Color</h6>
               </div>
             </div>
           </div>
+          <!------8888888888888888888888888888888888888888888888888888888888888888888888-->
+          <br><br><br><br>
+          <div class="bdaywishheadingoutsidewishcard">
+            <h1>B'DAY Wishes For You</h1>
+          </div>
+      
+          <div class="row" id="thirdrow">
+           
+           <div class="cardmiddle">
+            <div class="front">
+              <img src="images/gift1.gif" alt="" class="imgcardwish"> 
+             
+            </div>
+            <div class="back">
+              <div class="back-content-middle">
+               
+              </div>
+            </div>
+           </div>
+           <div class="cardmiddle">
+            <div class="front">
+              <img src="images/baloonlogo.png" alt=""  class="imgcardwish"> 
+             
+            </div>
+            <div class="back">
+              <div class="back-content-middle">
+                
+              </div>
+            </div>
+           </div>
+           <div class="cardmiddle">
+            <div class="front">
+              <img src="images/gift2.gif" alt=""  class="imgcardwish"> 
+             
+            </div>
+            <div class="back">
+              <div class="back-content-middle">
+              
+              </div>
+            </div>
+           </div>
+           
+          </div>
+          <!------8888888888888888888888888888888888888888888888888888888888888888888888-->
+          <div class="wishtextfromme" style="text-align: center;">
+            <p>Wishes</p>
+          </div>
+
+          <!------8888888888888888888888888888888888888888888888888888888888888888888888-->
+          <br><br><br><br>
+          <div class="galleryheadingoutside">
+            <h1>Five Shades Of Kriti</h1>
+          </div>
+          
+          <div class="galleryhead">
+          <div class="containers">
+            <div class="cards">
+              <img src="images/happy.png" class="imggallery">
+              <div class="card__head">Happy</div>
+            </div>
+            <div class="cards">
+              <img src="images/stress.png" class="imggallery">
+              <div class="card__head">Stressed</div>
+            </div>
+            <div class="cards">
+              <img src="images/blissed.png" class="imggallery">
+              <div class="card__head">Blissful</div>
+            </div>
+            <div class="cards">
+              <img src="images/flirty.png" class="imggallery">
+              <div class="card__head">Flirty</div>
+            </div>
+            <div class="cards">
+              <img src="images/sleepy.png" class="imggallery">
+              <div class="card__head">Sleepy</div>
+            </div>
+            
+          </div></div>
+          <!------8888888888888888888888888888888888888888888888888888888888888888888888-->
+          <div class="galleryviewmore" style="text-align: center; margin-top:-25px">
+            <button onclick="window.location.href='gallery.html';">More Pics</button> 
+          </div>
         </div>
       </section>
+   
       <!--//about -->
       <!-- skills
       <section class="skills py-lg-4 py-md-3 py-sm-3 py-3" id="skills">
@@ -348,13 +749,24 @@
         <div class="container pb-lg-3 pb-2">
           <div class="bottem-txt-footer text-center pt-md-4 pt-3">
             <p>
-              Anything for you Miss Sweta Mishra By Ved 
+              Anything for you Miss Kriti Ranjan By Dev 
             </p>
           </div>
         </div>
       </footer>
     </div>
   </div>
+<!-- Gallery-plugin -->
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/jquery.cm-overlay.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.cm-overlay').cmOverlay();
+			});
+		</script>
+<!-- //Gallery-plugin -->
+
+<!-- --------------------------------//popup ------------------------>
 
 </body>
 
